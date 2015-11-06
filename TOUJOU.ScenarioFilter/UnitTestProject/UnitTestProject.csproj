@@ -58,11 +58,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SpecFlowFeature.feature.cs">
+    <Compile Include="FeatureB.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature.feature</DependentUpon>
+      <DependentUpon>FeatureB.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FeatureA.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeatureA.feature</DependentUpon>
     </Compile>
     <Compile Include="StepDefinition.cs" />
   </ItemGroup>
@@ -70,10 +75,14 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
-    <None Include="SpecFlowFeature.feature">
+    <None Include="FeatureB.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature.feature.cs</LastGenOutput>
+      <LastGenOutput>FeatureB.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="FeatureA.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FeatureA.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup />

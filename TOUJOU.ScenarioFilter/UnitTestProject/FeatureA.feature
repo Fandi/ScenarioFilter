@@ -1,5 +1,5 @@
 ﻿@filter:A
-Feature: Feature
+Feature: Feature A
 
 Scenario: Feature filtered by A
     Then this scenario should pass
