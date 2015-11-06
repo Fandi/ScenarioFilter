@@ -14,64 +14,64 @@
 namespace UnitTestProject
 {
     using TechTalk.SpecFlow;
-
-
+    
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class FeatureFeature
+    public partial class FeatureAFeature
     {
-
+        
         private static TechTalk.SpecFlow.ITestRunner testRunner;
-
-#line 1 "SpecFlowFeature.feature"
+        
+#line 1 "FeatureA.feature"
 #line hidden
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Feature", "", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Feature A", "", ProgrammingLanguage.CSharp, new string[] {
                         "filter:A"});
             testRunner.OnFeatureStart(featureInfo);
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
         public static void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute()]
         public virtual void TestInitialize()
         {
-            if (((TechTalk.SpecFlow.FeatureContext.Current != null)
-                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Feature")))
+            if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
+                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Feature A")))
             {
-                UnitTestProject.FeatureFeature.FeatureSetup(null);
+                UnitTestProject.FeatureAFeature.FeatureSetup(null);
             }
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
         }
-
+        
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
         }
-
+        
         public virtual void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Feature filtered by A")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A")]
         public virtual void FeatureFilteredByA()
         {
@@ -81,16 +81,16 @@ Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following 
 #endif
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Feature filtered by A", ((string[])(null)));
 #line 4
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 5
-            testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Scenario filtered by B")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:B")]
         public virtual void ScenarioFilteredByB()
@@ -102,16 +102,16 @@ Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following 
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Scenario filtered by B", new string[] {
                         "filter:B"});
 #line 8
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 9
-            testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Scenario filtered by A, B, and C")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:C")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:B,A")]
@@ -125,58 +125,58 @@ Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following 
                         "filter:C",
                         "filter:B,A"});
 #line 13
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 14
-            testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Scenario filtered by A and !B")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A,!B")]
         public virtual void ScenarioFilteredByAAndB()
         {
 #if !A || !!B
 #line 17
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following scenario is not valid for current test run configuration: Scenario filtered by A and !B.");
+Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following scenario is not valid for current test run configuration: Scenario filtered by A and !B.");
 #endif
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Scenario filtered by A and !B", new string[] {
                         "filter:A,!B"});
 #line 17
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 18
-            testRunner.Then("this negative scenario should be inconclusive", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("this negative scenario should be inconclusive", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Scenario filtered by D")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:D")]
         public virtual void ScenarioFilteredByD()
         {
 #if !A || !D
 #line 21
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following scenario is not valid for current test run configuration: Scenario filtered by D.");
+Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following scenario is not valid for current test run configuration: Scenario filtered by D.");
 #endif
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Scenario filtered by D", new string[] {
                         "filter:D"});
 #line 21
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 22
-            testRunner.Then("this negative scenario should be inconclusive", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("this negative scenario should be inconclusive", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
-
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Scenario filtered by !E and has a custom tag")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Feature A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:A")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("filter:!E")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("custom")]
@@ -190,9 +190,9 @@ Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive("The following 
                         "filter:!E",
                         "custom"});
 #line 25
-            this.ScenarioSetup(scenarioInfo);
+this.ScenarioSetup(scenarioInfo);
 #line 26
-            testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("this scenario should pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
